@@ -1,0 +1,395 @@
+@charset "UTF-8";
+/*RESET */
+/*--------------------------------------------------- */
+html,body,div,span,applet,object,
+iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,code
+del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,tt,var,
+dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead
+tr,th,td,
+
+*{ margin: 0;
+   padding: 0;
+   border: 0;
+   outline: 0;
+   font-weight: inherit;
+   font-style: inherit;
+   font-size: 100%;
+   font-family: inherit;
+   vertical-align: baseline;
+  
+ }
+*
+{box-sizing: border-box;}
+
+html
+{
+	font-family:"lato", sans-serif;
+	
+	font-size: 15px;
+}
+
+body
+{
+	background:#333636;
+}
+/*
+div.separator
+{
+ border:#214151 1px solid;
+}*/
+
+div.container
+{
+  max-width: 1250px;
+  margin: auto;
+  background: #f4f9f9;
+ 
+}
+
+/* Estilos para header */
+header
+{ 	
+	width:100%;
+	border:black 1px solid;
+	display: flex;
+	background: #214151;
+	color: #f4f5db;
+
+}
+.header-container
+{
+	width: 100%;
+	padding: 10px;
+}
+
+.titles-names
+{
+ display: inline-flex;
+ flex-direction: column;
+ width: 35%;
+ padding: 10px;
+ margin: 10px 5px;
+}
+
+h1#name 
+{	
+	border:#d89216 3px inset;
+	font-size: 20px;
+	margin: 5px 5px; 
+	padding: 10px 10px;
+	font-family: monospace;
+
+}
+h3#post
+{	
+	font-size: 20px;
+	margin: 5px 5px; 
+	padding: 10px 10px;
+	font-weight: bold;
+
+}
+
+.personal-info
+{
+	padding: 5px;
+	display:inline-flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: auto;
+	width: 80%;
+	float: left;
+	text-align: justify;
+}
+/*ESTILOS LINKS*/
+a{color:white; text-decoration: none;}
+a:hover{color: #ffd369 }
+a.py-dip{color:darkblue; font-weight:bold;}
+
+i.fas{color: #d89216;}
+i.fab{color: #d89216;}
+
+/*h4 para iconos en la misma linea*/
+h4.title-info{float: left;}
+
+/*ESTILOS Divs*/
+div.div-direc {margin:auto;}
+div.tel{margin: auto;}
+div.mail{margin: auto}
+div.age{margin: auto;}
+div.linkedin{margin: auto;}
+div.my-web{margin: auto;}
+
+.pp
+{
+	padding: 10px;
+	border-radius:150px;
+	margin: 30px 10px;
+}
+.div-pp
+{
+	float:left;
+}
+
+main.main
+{	
+	display: flex;
+	flex-direction: column;
+	padding: 50px;
+	margin: 10px;
+}
+
+h1.ar-title
+{
+	font-weight: bold;
+	font-size: 25px;
+	border: #214151 2px outset;
+	text-align: center;
+	background: #cfd3ce;	
+}
+#date{font-weight: bold; font-size:17px; }
+
+.about-me
+{
+	line-height: 1.5;
+	font-size: 16px;
+	margin: 10px;
+	padding: 10px;
+	text-align: justify;
+}
+.education{
+	line-height: 1.5;
+	font-size: 16px;
+	margin: 10px;
+	padding: 10px;
+	text-align: justify;
+}
+.capatitations{
+	line-height: 2.0;
+	font-size: 15px;
+	margin: 10px;
+	padding: 10px;
+	text-align: justify;
+}
+.work-xp{
+
+	font-size: 16px;
+	line-height: 1.8;
+	margin: 10px;
+	padding: 10px;
+	text-align: justify;
+}
+.personal-skills
+{	
+	display: grid;
+	margin: 10px;
+	padding: 10px;
+	text-align: justify;
+}
+.ul-per-skills
+{
+	padding-left: 50px;
+}
+
+.idioma-nivel
+{	
+	display: grid;
+	margin: 10px;
+	padding: 10px;
+	text-align: justify;
+}
+.lan-list
+{
+	grid-gap: 10px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	text-align: center;
+	align-items: center;
+	list-style-type: none;
+	font-weight: bold;
+	padding:20px;
+}
+.info{
+	font-size: 18px;
+	font-family: arial;
+	padding-bottom:10px;
+	text-align: center;
+	font-weight: bold;
+	color: #d89216;
+}
+.sub-info
+{
+	font-size: 15px;
+	font-family: arial;
+	padding-bottom:0px;
+	text-align: center;
+	font-weight: bold;
+	color: #14274e;
+}
+#idioma-title{
+	padding: 10px;
+	text-align: center;
+	font-weight: bold; 
+	font-size: 35px;
+
+}
+
+.info-s{text-align: left;
+		color:#14274e; font-weight: bold; 
+		font-size: 18px;
+		padding: 10px;
+		}
+.skills
+{	
+	display: grid;
+	margin: 10px;
+	padding: 10px 30px;
+	text-align: justify;
+}
+
+.lan-program-list
+{
+    grid-gap: 10px;
+    display: grid;
+    align-items: center;
+    font-weight: bold;
+    padding: 20px 50px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+.web-program-list{
+ 
+ 	grid-gap: 10px;
+    display: grid;
+    align-items: center;
+    font-weight: bold;
+   	padding: 20px 50px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+.bd-list
+{
+	grid-gap: 10px;
+    display: grid;
+    align-items: center;
+    font-weight: bold;
+    padding: 20px 50px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+.ides-list
+{
+	grid-gap: 10px;
+    display: grid;
+    align-items: center;
+    font-weight: bold;
+    padding: 20px 50px;;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+.edit-list
+{
+	grid-gap: 10px;
+    display: grid;
+    align-items: center;
+    font-weight: bold;
+     padding: 20px 50px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));	
+}
+.ul-basics
+{
+	padding: 25px 20px;
+}
+
+
+.last-area
+{ 	
+    width: 100%;
+    height: 100px;
+    background: #214151;
+    border:black 2px solid;
+}
+
+
+/* -----------ESTILOS RESPONSIVE -------Medias querys----------*/
+
+/*Estilo para movil*/
+@media screen and (max-width:480px) 
+{
+	.titles-names
+	{
+		display: flex;
+		flex-direction: row;
+		width: auto;
+		padding: 0px;	
+	}
+
+	.pp 
+	{
+    padding: 10px;
+    border-radius: 150px;
+    margin: 10px 90px;
+	}
+	.div-pp {
+    float: none;
+    width: 100%;
+	}
+	.personal-info
+	{
+    padding: 0;
+    display: inline-block;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    float: left;
+    text-align: justify;
+    margin: 10px 80px;
+	}
+	main.main
+	{
+		padding: 0px;
+		margin: 0px;
+	}
+	.skills {
+    display: block;
+    margin: 10px;
+    padding: 10px 30px;
+    text-align: justify;
+	}
+}
+
+/*Estilo para tablets*/
+@media screen and (min-width:481px) and (max-width: 768px)
+{	
+
+	body{width: 100%;}
+	div.container{width: 100%;}
+
+	.titles-names {
+    display: flex;
+     width: 100%; 
+    padding: 20px;
+    margin: 10px 20px;
+	}
+	.pp {
+    padding: 10px;
+    border-radius: 150px;
+    margin: 10px 80px;
+	}
+	.personal-info {
+    padding: 0px;
+    display: block;
+    justify-content: center;
+    /* align-items: center; */
+    /* text-align: center; */
+    margin: auto;
+    width: 100%;
+    float: none;
+    text-align: justify;
+    margin: 10px 260px;
+}
+}
+/*estilo pc*/
+@media screen and (min-width:1024px) 
+{
+	.personal-info
+	{
+		width: 70%;
+	}
+}
